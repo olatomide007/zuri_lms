@@ -1,0 +1,11 @@
+# python autogenterated  files
+__pycache__/
+# anything that ends with .pyc
+*.pyc
+
+# IDE SPECIFIED FOLDERS
+.idea/
+.vscode
+
+
+db.sqlite3
