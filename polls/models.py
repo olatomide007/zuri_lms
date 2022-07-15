@@ -7,10 +7,15 @@ class Question(models.Model):
     #pub.date
     #no need for this line of code cos django does the auto for us.
     question_text = models.CharField(max_length=255)
+    question_description = models.CharField(max_length=255, default= "Basic Description")
     pub_date = models.DateTimeField(auto_now_add=True)
 
 # 4)                   "Are you happy about Djagno"                                     "June 16, 09:50 WAT"
 # 5)                   "ARE YOU .."                                                    "JUNE 17, 10:00 WAT"
+
+
+    def __str__(self):
+        return self.question_text
 
 
 class Choices(models.Model):
@@ -28,3 +33,5 @@ class Choices(models.Model):
 # 1)                  "Are you happy about Djagno"                yes/no              3/0
 
 
+def __str__(self):
+        return self.choice_answer

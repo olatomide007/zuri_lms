@@ -1,0 +1,1 @@
+'polls', #or 'polls.apps.PollsConfig'
