@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'polls', #or 'polls.apps.PollsConfig'
 ]
 
 MIDDLEWARE = [
@@ -109,7 +110,7 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = True    #you can change to false if you changeing to Africa/Lagos in te Time Zone.
 
 
 # Static files (CSS, JavaScript, Images)
