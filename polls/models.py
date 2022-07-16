@@ -27,11 +27,11 @@ class Choices(models.Model):
    #django has done the auto id
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_answer = models.CharField(max_length=20)
-    vote = models.IntegerField(default=0)
+    vote = models.PositiveIntegerField(default=0)
 
 
 # 1)                  "Are you happy about Djagno"                yes/no              3/0
 
 
-def __str__(self):
-        return self.choice_answer
+    def __str__(self):
+        return f"{self.question} ---> {self.choice_answer}"
